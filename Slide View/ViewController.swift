@@ -127,6 +127,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
                     self.view.layoutIfNeeded()
                 }, completion: nil)
             } else if gestureRecognizer.state == .ended || gestureRecognizer.state == .cancelled {
+                // Move normally
                 print("Move")
                 if futureOriginY >= bottomHalfContainer {
                     containerTopConstraint?.constant = -(self.view.bounds.height - alwaysVisibleHeight)
@@ -134,14 +135,12 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
                     containerTopConstraint?.constant = -(self.view.bounds.height - midStateHeight)
                 } else if futureOriginY < halfContainer {
                     containerTopConstraint?.constant = -height
-                } else {
-                    
                 }
                 UIView.animate(withDuration: duration, animations: {
                     self.view.layoutIfNeeded()
                 })
             } else {
-                print("None")
+                print("Minimum Movement Required")
                 containerTopConstraint?.constant = -(futureOriginY)
             }
         }
