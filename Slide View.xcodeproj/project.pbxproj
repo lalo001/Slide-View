@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					20202E461E5F77050005872A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7Z3T83KEBB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7Z3T83KEBB;
 				INFOPLIST_FILE = "Slide View/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lalo.Slide-View";
@@ -272,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7Z3T83KEBB;
 				INFOPLIST_FILE = "Slide View/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lalo.Slide-View";
