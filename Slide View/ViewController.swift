@@ -45,7 +45,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.panGestureDetected(_:)))
         panGestureRecognizer.delegate = self
-        self.view.addGestureRecognizer(panGestureRecognizer)
+        container.addGestureRecognizer(panGestureRecognizer)
         
         overlay = UIView()
         overlay.translatesAutoresizingMaskIntoConstraints = false
